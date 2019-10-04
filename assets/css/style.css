@@ -222,23 +222,45 @@ input[type=submit] {
 }
 
 
-@media screen and (max-width: 980px){}
+@media screen and (max-width: 980px){
+  .container {
+    width: 800px;
+    
+  }
 
-@media screen and (max-width: 768px){}
+}
+
+@media screen and (max-width: 768px){
+  #masthead{
+    overflow: hidden;
+    width: 780px;
+    padding-left: 20px;
+    /* padding-right: 10px; */
+  }
+
+  .container {
+    width: 700px;
+    
+  }
+
+
+}
+
+
 
 @media screen and (max-width: 640px){
   
   
 #masthead{
   overflow: hidden;
-  width: 650px;
+  width: 640px;
   padding-left: 0%;
   /* padding-right: 10px; */
 }
 
   #logo {
    
-    width: 650px;
+    width: 640px;
     height: 90px;
   }
   nav {
@@ -283,5 +305,7 @@ input[type=submit] {
   } */
   footer{
     width: 640px;
+    overflow: hidden;
+    position: sticky;
   }
 }
